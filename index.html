@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balogh Dominik | Portfólió</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">BD<span>.</span></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#hero">Kezdőlap</a></li>
+            <li><a href="#projects">Projektek</a></li>
+            <li><a href="#skills">Készségek</a></li>
+            <li><a href="#contact">Kapcsolat</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Szia, <span class="highlight">Balogh Dominik</span> vagyok</h1>
+            <p class="position">Szoftverfejlesztő és -tesztelő diák vagyok a Mechwart András Technikumban</p>
+            <p class="motto">"Ha valami nem működik, ne küszködj, hanem használj AI-t"</p>
+            <a href="#projects" class="btn">Munkáim megtekintése</a>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2 class="section-title">Projektek</h2>
+        <div class="project-grid">
+            <a href="https://github.com/scynthi/UndyingKnight" class="project-card reveal" target="_blank">
+                <div class="card-content">
+                    <h3>Undying Knight</h3>
+                    <p>Egy "Megabonk" nevű játékon alapuló akciódús 3D RPG játék, ahol a túlélés a cél.</p>
+                    <span class="tag">GameDev</span>
+                </div>
+            </a>
+            <a href="https://github.com/BDominik123/godot_sprite_jatek" class="project-card reveal" target="_blank">
+                <div class="card-content">
+                    <h3>Godot Sprite Játék</h3>
+                    <p>Sprite-alapú animációk és mechanikák tesztelése Godot motorral.</p>
+                    <span class="tag">Godot / GDScript</span>
+                </div>
+            </a>
+            <a href="https://www.figma.com/proto/PqBwtkb66lz6DBmjN0cTYZ/Webshit?node-id=1-4" class="project-card reveal" target="_blank">
+                <div class="card-content">
+                    <h3>Figma Projekt</h3>
+                    <p>Modern webshop felhasználói felület tervezése, fókuszban a reszponzivitással és a letisztult felhasználói élménnyel.</p>
+                    <span class="tag">Design</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="skills" class="container">
+        <h2 class="section-title">Készségek</h2>
+        <div class="skills-wrapper reveal">
+            <div class="skill-item">
+                <div class="skill-info"><span>C#</span><span>76%</span></div>
+                <div class="progress-line"><span style="width: 75%;"></span></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info"><span>Python</span><span>65%</span></div>
+                <div class="progress-line"><span style="width: 65%;"></span></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info"><span>HTML + CSS + JS</span><span>67%</span></div>
+                <div class="progress-line"><span style="width: 80%;"></span></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info"><span>SQL</span><span>60%</span></div>
+                <div class="progress-line"><span style="width: 60%;"></span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2 class="section-title">Kapcsolat</h2>
+        <form id="contactForm" class="reveal">
+            <input type="text" id="name" placeholder="Neved" required>
+            <input type="email" id="email" placeholder="E-mail címed" required>
+            <textarea id="message" rows="5" placeholder="Üzeneted..." required></textarea>
+            <button type="submit" class="btn">Küldés</button>
+            <p id="formFeedback" class="hidden"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Balogh Dominik. Minden jog fenntartva.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
